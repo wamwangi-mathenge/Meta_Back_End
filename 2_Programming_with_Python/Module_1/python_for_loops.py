@@ -6,5 +6,5 @@ for i in range(10):
     
 favorites = ['Creme Brulee', 'Apple Pie', 'Churros', 'Tiramiso', 'Chocolate Cake']
 
-for item in favorites:
-    print(item)
+for idx, item in enumerate(favorites):
+    print(idx, item)
