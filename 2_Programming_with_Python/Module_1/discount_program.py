@@ -6,7 +6,7 @@
 
 
 
-bill_total = 120
+bill_total = 1000
 loyalty_program = True
 
 if loyalty_program and bill_total > 100:
@@ -14,6 +14,9 @@ if loyalty_program and bill_total > 100:
     bill_total = bill_total - (0.2 * bill_total)
 elif loyalty_program == False and bill_total > 100:
     print("Customer is not part of the loyalty program but spent over $100")
+    bill_total = bill_total - (0.1 * bill_total)
+elif loyalty_program == True and bill_total <= 100:
+    print("Customer is part of the loyalty program but did not spend over $100")
     bill_total = bill_total - (0.1 * bill_total)
 else:
     print("Customer is not part of the loyalty program and did not spend over $100")
