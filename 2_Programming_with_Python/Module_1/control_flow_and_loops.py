@@ -5,16 +5,34 @@
 
 favorites = ["Nairobi", "Cape Town", "Cairo", "Casablanca", "Windhoek"]
 
-for city in favorites:
-    if city == "Nairobi":
-        print(f"My favorite city is {city}")
+# for city in favorites:
+#     if city == "Nairobi":
+#         print(f"My favorite city is {city}")
         
         
 # What happens if you look for a city and that city is not on the list?
 # We add an else statement to handle the case of when it is not found
 
+# for city in favorites:
+#     if city == "Nairobi":
+#         print(f"Kenya's capital is {city}")
+#     else:
+#         print("Kenya's capital does not exist")
+        
+
+# Flaw in the above logic
+# Change the search term to something that is on the list eg. Nairobi
+# The city is on the list, but it still printed out the else condition
+# To fix this use a control statement called "BREAK"
+
 for city in favorites:
-    if city == "Kigali":
-        print(f"Rwanda's capital is {city}")
+    if city == "Nairobi":
+        print(f"Kenya's capital is {city}")
+        break
     else:
-        print("Rwanda's capital does not exist")
+        print(f"Kenya's capital does not exist")
+        
+        
+# Running the above code will resolve the issue.
+# The BREAK statement is used to stop the loop, which in turn stops the condition.
+# Without the break, the loop will continue even after the `if` condition is met
