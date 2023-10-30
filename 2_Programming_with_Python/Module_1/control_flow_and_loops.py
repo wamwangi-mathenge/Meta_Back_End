@@ -49,4 +49,4 @@ for city in favorites:
         continue
     print(f"Other cities in Africa are {city}")
     
-# The outcome of the above code snippet will print everything except the Churros dessert
+# The outcome of the above code snippet will print everything except the Cairo city
