@@ -50,3 +50,13 @@ for city in favorites:
     print(f"Other cities in Africa are {city}")
     
 # The outcome of the above code snippet will print everything except the Cairo city
+
+
+
+# -------PASS-----------
+# The pass statement allows you to run through the loop in its entirety and effectively ignore that the if condition has been satisfied
+
+for city in favorites:
+    if city == "Casablanca":
+        pass
+    print(f"{city} is a city in Morocco")
