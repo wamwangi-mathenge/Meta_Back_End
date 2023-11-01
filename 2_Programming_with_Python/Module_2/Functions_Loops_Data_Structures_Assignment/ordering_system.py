@@ -25,6 +25,10 @@ def calculate_subtotal(order):
     """
     print('Calculating bill subtotal...')
     ### WRITE SOLUTION HERE
+    sum_total=0
+    for item in order:
+        sum_total+=item["price"]
+    return sum_total
 
     raise NotImplementedError()
 
@@ -66,6 +70,15 @@ def summarize_order(order):
     """
     print_order(order)
     ### WRITE SOLUTION HERE
+    sub_total = calculate_subtotal(order)
+    tax_paid = calculate_tax(sub_total)
+    total = sub_total + tax_paid
+    l=[]
+    for item in order:
+        l.append(item["name"])
+    summary=(l, round(total, 2))
+    return summary
+        
 
     raise NotImplementedError()
 
