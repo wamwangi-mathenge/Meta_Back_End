@@ -42,6 +42,8 @@ def calculate_tax(subtotal):
     """
     print('Calculating tax from subtotal...')
     ### WRITE SOLUTION HERE
+    tax = subtotal * 0.15
+    return round(tax, 2)
 
     raise NotImplementedError()
 
