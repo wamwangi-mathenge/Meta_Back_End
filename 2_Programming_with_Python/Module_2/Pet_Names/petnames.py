@@ -1,5 +1,7 @@
 import random
-f = open("petnames.txt", "r")
+# f = open("petnames.txt", "r")
+f_name = input("Type the file name: ")
+f = open(f_name)
 f_content = f.read()
 # print(f_content)
 f_content_list = f_content.split("\n")
